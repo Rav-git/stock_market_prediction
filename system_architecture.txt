@@ -1,0 +1,45 @@
++----------------------------------------------------------+
+|                   Stock Market Prediction System                |
++----------------------------------------------------------+
+                        |
+        +---------------+---------------+
+        |               |               |
++---------------+ +---------------+ +---------------+
+| Data Collection| | Sentiment      | | Prediction     |
+| Module        | | Analysis       | | Module        |
++---------------+ | Module         | +---------------+
+        |         +---------------+          |
+        |               |                    |
+        v               v                    v
++---------------+ +---------------+ +---------------+
+| Stock Data    | | Sentiment     | | ML Models     |
+| - Yahoo Finance| | Analysis      | | - LSTM        |
+| - Historical  | | - VADER       | | - Random      |
+|   OHLCV       | | - TextBlob    | |   Forest      |
+| - Custom API  | | - Ensemble    | | - Ensemble    |
++---------------+ +---------------+ +---------------+
+        |               |                    |
+        +---------------+--------------------+
+                        |
+                        v
+                +---------------+
+                | Visualization |
+                | Module        |
+                +---------------+
+                        |
+                        v
+        +-------------------------------+
+        | Interactive Dashboard         |
+        | - Price Charts                |
+        | - Technical Indicators        |
+        | - Prediction Visualization    |
+        | - Sentiment Trends            |
+        | - Stock Comparison            |
+        +-------------------------------+
+
+Figure 1: System Architecture for Stock Market Prediction.
+The architecture consists of four main components: data collection,
+sentiment analysis, prediction, and visualization. Data flows from the
+collection modules through sentiment analysis and prediction to the
+visualization system, which provides an interactive dashboard for
+users to explore predictions and analysis results. 

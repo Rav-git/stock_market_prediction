@@ -1,0 +1,91 @@
+SYSTEM ARCHITECTURE DIAGRAM
+=======================
+
+Title: Stock Market Prediction System Architecture
+
+Layout:
+- The diagram uses a top-down flow design
+- Four main rectangular modules arranged vertically with data flow arrows between them
+- Each module contains sub-components in smaller rectangles
+
++---------------------------------------------------------+
+|                DATA COLLECTION MODULE                    |
++---------------------------------------------------------+
+|                                                         |
+|  +----------------+          +---------------------+    |
+|  | Stock Data     |          | Financial News      |    |
+|  | Collection     |          | Collection          |    |
+|  | - Yahoo Finance|          | - NewsAPI           |    |
+|  | - Historical   |          | - Articles, Tweets  |    |
+|  +----------------+          +---------------------+    |
+|                                                         |
++---------------------------------------------------------+
+                        |
+                        | (Data flow arrow)
+                        v
++---------------------------------------------------------+
+|               SENTIMENT ANALYSIS MODULE                  |
++---------------------------------------------------------+
+|                                                         |
+|  +----------------+    +----------------+               |
+|  | Preprocessing  |    | Sentiment      |               |
+|  | - Text cleaning|    | Analysis       |               |
+|  | - Normalization|    | - VADER        |               |
+|  | - Tokenization |    | - TextBlob     |               |
+|  |                |    | - Ensemble     |               |
+|  +----------------+    +----------------+               |
+|                                                         |
++---------------------------------------------------------+
+                        |
+                        | (Data flow arrow)
+                        v
++---------------------------------------------------------+
+|                 PREDICTION MODULE                        |
++---------------------------------------------------------+
+|                                                         |
+|  +----------------+    +----------------+               |
+|  | Feature        |    | Models         |               |
+|  | Engineering    |    | - LSTM Network |               |
+|  | - Technical    |    | - Random Forest|               |
+|  |   Indicators   |    | - Ensemble     |               |
+|  | - Sentiment    |    |   Model        |               |
+|  |   Features     |    |                |               |
+|  +----------------+    +----------------+               |
+|                                                         |
++---------------------------------------------------------+
+                        |
+                        | (Data flow arrow)
+                        v
++---------------------------------------------------------+
+|                VISUALIZATION MODULE                      |
++---------------------------------------------------------+
+|                                                         |
+|  +----------------+    +----------------+               |
+|  | Interactive    |    | Dashboard      |               |
+|  | Charts         |    | Views          |               |
+|  | - Price Charts |    | - Price Chart  |               |
+|  | - Technical    |    | - Technical    |               |
+|  |   Indicators   |    |   Indicators   |               |
+|  | - Sentiment    |    | - Prediction   |               |
+|  |   Visualization|    | - Comparison   |               |
+|  +----------------+    +----------------+               |
+|                                                         |
++---------------------------------------------------------+
+
+Legend:
+- Rectangular boxes: Modules and components
+- Arrows: Data flow between modules
+- Text inside boxes: Component names and features
+
+Color Scheme:
+- Data Collection Module: Light blue
+- Sentiment Analysis Module: Light green
+- Prediction Module: Light orange
+- Visualization Module: Light purple
+- Arrows: Dark gray
+- Background: White
+- Text: Black
+
+Note: This diagram shows the logical flow of data through the system, 
+from data collection, through sentiment analysis and prediction, to 
+the final visualization that users interact with. 

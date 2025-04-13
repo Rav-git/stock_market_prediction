@@ -1,0 +1,102 @@
+VISUALIZATION SYSTEM FIGURE
+==========================
+
+Title: Interactive Dashboard for Stock Market Analysis and Prediction
+
+Layout:
+- A 2×2 grid layout showing four different dashboard views
+- Each panel labeled (a), (b), (c), and (d) in the top-left corner
+- All panels have similar styling to show they're part of the same interface
+
+PANEL (a): Price Chart View
+--------------------------
+Title: "AAPL Price History and Prediction"
+Content:
+- Candlestick chart showing historical AAPL prices
+- Moving averages (5-day, 20-day, 50-day) as colored lines
+- Vertical dashed line indicating "today"
+- Predicted future prices shown as red dashed line
+- Gray shaded area showing prediction confidence interval
+- Volume bars at the bottom
+- Date slider for time range selection
+
+Key features to highlight:
+- Clear visual distinction between historical and predicted data
+- Confidence intervals widening as predictions extend further
+- Interactive elements (tooltips, slider)
+
+PANEL (b): Technical Indicators View
+----------------------------------
+Title: "Technical Indicators - AAPL"
+Content:
+- Top chart: Price line with moving averages
+- Bottom chart: RSI indicator with overbought/oversold lines at 70/30
+- Highlighted regions showing bullish/bearish signals
+- Annotations pointing to key technical patterns
+
+Key features to highlight:
+- Color-coded indicators showing signals (green for bullish, red for bearish)
+- Clear horizontal reference lines for RSI thresholds
+- Synchronized x-axis with other charts
+
+PANEL (c): Prediction View
+------------------------
+Title: "AAPL Price Prediction (5 Days)"
+Content:
+- Line chart showing recent historical prices and prediction
+- Confidence intervals shown as shaded area
+- Table below showing:
+  * Day-by-day predictions with upper/lower bounds
+  * Daily change percentages
+  * Prediction accuracy metrics
+- Summary statistics in metrics cards (current price, predicted price, expected change)
+
+Key features to highlight:
+- Metrics cards showing key predictions
+- Color-coded cells in the table (green for positive, red for negative)
+- Detailed view of confidence intervals
+
+PANEL (d): Stock Comparison View
+------------------------------
+Title: "Stock Comparison"
+Content:
+- Line chart showing normalized price performance of multiple stocks (AAPL, MSFT, TSLA)
+- Correlation matrix heatmap showing stock price correlations
+- Performance metrics table comparing stocks
+- Bar chart showing trading volume comparison
+
+Key features to highlight:
+- Normalized prices to allow fair comparison
+- Color-coded correlation matrix
+- Metrics comparing different stocks' performance
+
+ANNOTATIONS AND LABELS:
+---------------------
+- Each panel clearly labeled (a), (b), (c), (d)
+- Figure caption: "Interactive visualization dashboard showing: (a) Price Chart View with historical and predicted prices, (b) Technical Indicators View with RSI and moving averages, (c) Prediction View with confidence bounds and metrics table, and (d) Stock Comparison View with normalized prices and correlation matrix."
+- Interface elements labeled (buttons, sliders, dropdowns)
+
+COLOR SCHEME:
+-----------
+- Dashboard background: Light gray or white
+- Charts:
+  * Price lines: Blue
+  * Prediction lines: Red
+  * Confidence intervals: Light red shading
+  * Moving averages: Green, orange, purple
+  * Positive changes: Green
+  * Negative changes: Red
+  * Different stocks: Distinct colors (blue, orange, green)
+- Correlation matrix: Red-blue divergent color scale
+- Text: Dark gray or black
+- UI elements: Consistent with Streamlit styling
+
+DESIGN NOTES:
+-----------
+- Show realistic UI elements to demonstrate interactivity
+- Include tooltips or hover information where applicable
+- Use consistent styling across all panels
+- Show enough data to be meaningful but not overcrowded
+- Include Streamlit UI elements (sliders, dropdowns, sidebar)
+- Ensure all text is legible at final print size
+- Maintain aspect ratio appropriate for the journal 

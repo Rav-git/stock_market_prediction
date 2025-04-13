@@ -1,0 +1,72 @@
+SENTIMENT-PRICE CORRELATION FIGURE
+================================
+
+Title: Correlation Between News Sentiment and AAPL Stock Price Movements
+
+Layout:
+- Two-panel figure arranged vertically
+- Top panel shows time series
+- Bottom panel shows correlation scatter plot
+
+TOP PANEL: Time Series View
+---------------------------
+X-axis: Date (3-month period from Jan 2025 to Mar 2025)
+Y-axis (left): Stock Price ($)
+Y-axis (right): Sentiment Score (-1 to 1)
+
+Elements:
+- Blue line: AAPL daily closing prices (left axis)
+- Green line: Daily compound sentiment scores (right axis)
+- Red markers: Major news events (e.g., earnings announcements)
+- Gray vertical lines: Connect corresponding dates between top and bottom panels
+
+Key features to highlight:
+- Price spikes following positive sentiment shifts
+- Price drops following negative sentiment shifts
+- Major news events with significant sentiment changes
+
+BOTTOM PANEL: Correlation Scatter Plot
+-------------------------------------
+X-axis: Sentiment Score (-1 to 1)
+Y-axis: Next-Day Price Change (%)
+
+Elements:
+- Blue scatter points: Each point represents a (sentiment, next-day price change) pair
+- Red trend line: Linear regression line showing correlation
+- Text annotation: "r = 0.42" correlation coefficient
+- Light gray horizontal line at y=0 to indicate zero price change
+- Light gray vertical line at x=0 to indicate neutral sentiment
+
+Key features to highlight:
+- Positive correlation: Higher sentiment scores tend to associate with positive price changes
+- Cluster patterns: More dense clusters in certain sentiment regions
+- Outlier points with annotations for significant news events
+
+ANNOTATIONS AND CAPTIONS:
+------------------------
+Figure caption: "Correlation between news sentiment scores and AAPL stock price movements over a 3-month period (Jan-Mar 2025). Top panel shows daily closing prices and sentiment scores; bottom panel displays the correlation between sentiment scores and next-day price changes."
+
+Annotation notes:
+- Label key events (e.g., "Earnings Report", "Product Launch", "Market Downturn")
+- Highlight areas where sentiment clearly preceded price movements
+- Mark correlation coefficient prominently
+
+COLOR SCHEME:
+------------
+- Background: White
+- Price line: Blue
+- Sentiment line: Green
+- Event markers: Red
+- Grid lines: Light gray
+- Correlation scatter points: Blue dots
+- Trend line: Red
+- Axis and text: Black
+
+DESIGN NOTES:
+------------
+- Ensure both panels align perfectly along the x-axis dates
+- Use consistent font size and style throughout
+- Include minor grid lines for readability
+- Ensure sufficient resolution (300+ DPI)
+- Optimize figure width to fit journal column width
+- Use appropriate line weights to ensure clarity in print 

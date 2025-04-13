@@ -1,0 +1,62 @@
+"""
+Configuration file for the stock market prediction project.
+Fill in your API keys before running the application.
+"""
+
+# API Keys - Using placeholder values since we'll be working with only Yahoo Finance
+ALPHA_VANTAGE_API_KEY = "YOUR_ALPHA_VANTAGE_API_KEY"
+TWITTER_API_KEY = "YOUR_TWITTER_API_KEY"
+TWITTER_API_SECRET = "YOUR_TWITTER_API_SECRET"
+TWITTER_ACCESS_TOKEN = "YOUR_TWITTER_ACCESS_TOKEN"
+TWITTER_ACCESS_SECRET = "YOUR_TWITTER_ACCESS_SECRET"
+FINNHUB_API_KEY = "YOUR_FINNHUB_API_KEY"
+NEWS_API_KEY = "YOUR_NEWS_API_KEY"
+
+# Database Configuration
+MONGODB_CONNECTION_STRING = "mongodb://localhost:27017/"
+DATABASE_NAME = "stock_sentiment_db"
+
+# Big Data Storage Configuration
+# Cassandra Configuration - Commented out since we don't have a Cassandra server running
+# CASSANDRA_CONTACT_POINTS = ["localhost"]
+# CASSANDRA_PORT = 9042
+# CASSANDRA_USERNAME = "cassandra"
+# CASSANDRA_PASSWORD = "cassandra"
+
+# HDFS Configuration - Commented out since we don't have HDFS running
+# HDFS_URL = "http://localhost:9870"
+# HDFS_USER = "hdfs"
+
+# Kafka Configuration - Commented out since we don't have Kafka running
+# KAFKA_BOOTSTRAP_SERVERS = ["localhost:9092"]
+# KAFKA_STOCK_TOPIC = "stock_prices"
+# KAFKA_SENTIMENT_TOPIC = "stock_sentiment"
+# KAFKA_PREDICTION_TOPIC = "stock_predictions"
+
+# Spark Configuration
+SPARK_MASTER = "local[*]"
+SPARK_APP_NAME = "StockMarketAnalysis"
+SPARK_UI_PORT = 4040
+
+# Stock Symbols to Track - limiting to just one stock for faster analysis
+STOCK_SYMBOLS = ["AAPL"]
+
+# Time Intervals
+DATA_FETCH_INTERVAL = 3600  # Seconds (1 hour)
+SENTIMENT_ANALYSIS_INTERVAL = 7200  # Seconds (2 hours)
+PREDICTION_INTERVAL = 86400  # Seconds (24 hours)
+
+# Machine Learning Parameters
+TRAINING_WINDOW = 30  # Days of historical data for training
+PREDICTION_HORIZON = 5  # Days to predict ahead
+SENTIMENT_WEIGHT = 0.3  # Weight of sentiment in prediction model
+
+# Application Settings
+DEBUG = False
+LOG_LEVEL = "INFO"
+MAX_DATA_AGE = 30  # Days to keep historical data
+
+# Dash Visualization Settings
+DASH_PORT = 8050
+DASH_DEBUG = True
+DASH_UPDATE_INTERVAL = 60000  # 60 seconds in milliseconds 
