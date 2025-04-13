@@ -62,14 +62,6 @@ A comprehensive system for stock market prediction integrating technical analysi
 - `figures/` - Diagram descriptions for the research paper
 - `Stock_Market_Prediction_Research_Paper.tex` - Research paper documenting the approach
 
-## Research Paper
-
-This repository includes a research paper "Stock Market Prediction Using Sentiment Analysis and Machine Learning: A Hybrid Approach" in Elsevier format. See `PAPER_README.md` for details on compiling the paper.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Acknowledgments
 
 - [Yahoo Finance API](https://pypi.org/project/yfinance/) for stock data
